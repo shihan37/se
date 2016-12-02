@@ -38,16 +38,55 @@ namespace se
 
         private void Save_Click(object sender, EventArgs e)
         {
-          
+            string errorMessage = "";
+
+            if( !DataCheck(out errorMessage) )
+            {
+                MessageBox.Show(errorMessage);
+                return;
+            }
+
+            InsertDataToDatabase();
+        }
+
+        private bool DataCheck(out string errorMessage)
+        {
+            bool result = true;
+            errorMessage = "";
+
+            if (!this.IDtextBox.Text.All(char.IsDigit))
+            {
+                //id must be numbers
+                result = false;
+                errorMessage += "ID must be numbers\r\n";
+            }
+
+
+            if (this.IDtextBox.Text.Length != 7)
+            {
+                //id must be 7 digits
+                result = false;
+                errorMessage += "ID must have 7 digits\r\n";
+            }
+
+
+
+
+
+
+            return result;
+        }
+
+        private void InsertDataToDatabase()
+        {
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                command.CommandText = "insert into se (ID,FirstName,LastName,CertificationLevel,ClassCompleteDate,ExpirationDate,CertificationStatus) values('" + IDtextBox.Text + "','" + FrirsttextBox.Text + "','" + LasttextBox.Text + "','"+LeveltextBox.Text+"','"+CdateTimePicker.Text+"','"+EdateTimePicker.Text+"','"+Status+"')";
+                command.CommandText = "insert into se (ID,FirstName,LastName,CertificationLevel,ClassCompleteDate,ExpirationDate,CertificationStatus) values('" + IDtextBox.Text + "','" + FrirsttextBox.Text + "','" + LasttextBox.Text + "','" + LeveltextBox.Text + "','" + CdateTimePicker.Text + "','" + EdateTimePicker.Text + "','" + Status + "')";
                 command.ExecuteNonQuery();
                 MessageBox.Show("New Certificaiton Add Successful");
-                connection.Close();
                 /* Edit data
                  * string query = "update se set ID='"+IDtextBox.Text+"',FirstName='"+FristtextBox.Text+"'"
                  * MessageBox.Show(query);
@@ -63,7 +102,11 @@ namespace se
             {
                 MessageBox.Show("Error" + ex);
             }
+            finally
+            {
+                connection.Close();
             }
+        }
 
         private void Back_Click(object sender, EventArgs e)
         {
@@ -110,11 +153,11 @@ namespace se
 
         private void IDtextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char ch = e.KeyChar;
-            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
-            {
-                e.Handled = true;
-            }
+            //char ch = e.KeyChar;
+            //if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            //{
+            //    e.Handled = true;
+            //}
 
         
         }

@@ -16,3 +16,21 @@ C:\Users\Shihan\Documents\Visual Studio 2015\Projects\se\se\obj\Debug\se.trackin
 C:\Users\Shihan\Documents\Visual Studio 2015\Projects\se\se\obj\Debug\se.addnote.resources
 C:\Users\Shihan\Documents\Visual Studio 2015\Projects\se\se\obj\Debug\se.note.resources
 C:\Users\Shihan\Documents\Visual Studio 2015\Projects\se\se\obj\Debug\se.readnote.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.exe
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.pdb
+C:\Users\Halforc\Source\Repos\se\se\bin\Debug\se.exe
+C:\Users\Halforc\Source\Repos\se\se\bin\Debug\se.pdb
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.csprojResolveAssemblyReference.cache
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.addinventory.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.addnote.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.certification.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.addnew.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.inventory.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.showlist.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.note.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.readnote.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.remove.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.track.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.trackingcertification.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.Properties.Resources.resources
+C:\Users\Halforc\Source\Repos\se\se\obj\Debug\se.csproj.GenerateResource.Cache

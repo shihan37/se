@@ -28,6 +28,12 @@ namespace se
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ShowData();
+
+        }
+
+        private void ShowData()
+        {
             try
             {
                 connection.Open();
@@ -48,7 +54,6 @@ namespace se
             {
                 MessageBox.Show("Error" + ex);
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -56,6 +61,11 @@ namespace se
             certification f1 = new certification();
             this.Hide();
             f1.ShowDialog();
+        }
+
+        private void showlist_Load(object sender, EventArgs e)
+        {
+            ShowData();
         }
     }
 }
